@@ -22,7 +22,7 @@ function QuestionBox() {
     console.log(questions)
       return (
     <div className='bg-gray-100 w-9/12 min-w-64 h-screen text-center dark:text-white absolute top-0 left-0' >
-        <div className='items-center content-center justify-self-center w-auto'>
+        <div className='items-center my-10 content-center justify-self-center w-auto'>
       <Palette isQuestion={true} text={questions[questionNo]['question']} question={questions[questionNo]} />
        <span className={`${ questions[questionNo]['difficulty']==='hard'?'bg-red-700':
        questions[questionNo]['difficulty']==='medium'?'bg-yellow-700':'bg-green-700'}

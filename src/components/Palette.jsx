@@ -19,7 +19,7 @@ function Palette({text,isQuestion,question={},index=-1}) {
   };
   return (
     <div className={`
-    ${isQuestion?'mx-auto w-4/6 min-w-64 h-20 bg-gray-200 '
+    ${isQuestion?'mx-auto w-4/6 min-w-64 h-20 bg-gray-200 flex flex-col justify-center'
     : question['choice']===index?'bg-yellow-200 px-4 py-2 flex flex-col justify-center w-4/6 my-10 h-20':'bg-gray-200 px-4 py-2 flex flex-col justify-center w-4/6 my-10 h-20'}
      text-center shadow-md text-black align-middle rounded-md`} 
      

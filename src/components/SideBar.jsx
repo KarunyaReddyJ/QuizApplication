@@ -7,7 +7,7 @@ function SideBar() {
     <div className="text-black grid-cols-2 grid w-1/4  absolute right-0">
       {
         questions.map((question,index)=>{
-             return (<div key={index} className={`${question['attempted']?'bg-green-700':'bg-gray-100'} w-20 h-20 rounded-full my-2 text-center  `} > {index+1} </div>)
+             return (<div key={index} className={`${question['attempted']?'bg-green-700':'bg-gray-100'} w-16 h-16 rounded-full my-2 text-center flex flex-col justify-center `} > {index+1} </div>)
         })
       }
     </div>
