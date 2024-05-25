@@ -24,4 +24,8 @@ This project is a quiz application built with React. It fetches quiz questions f
 - [Custom Hook](#custom-hook)
   - [useData](#usedata)
 - [Styling](#styling)
+<<<<<<< HEAD
 - [License](#license)
+=======
+- [License](#license)
+>>>>>>> 819100f3cf3283a7c8244ed368e3ee4375574771
