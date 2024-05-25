@@ -1,16 +1,13 @@
-
-import useData from '../CustomHook/useData'
+import useData from "../CustomHook/useData";
 function Display() {
-    const { questions }=useData()
+  const { questions } = useData();
   return (
     <div>
-      {
-        questions.map((question)=>{
-            return (<p key={question.correct_answer} >{question.question}</p>  )
-})
-      }
+      {questions.map((question) => {
+        return <p key={question.correct_answer}>{question.question}</p>;
+      })}
     </div>
-  )
+  );
 }
 
-export default Display
+export default Display;

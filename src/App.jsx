@@ -1,17 +1,24 @@
-import './App.css'
+
+import Result  from './components/Result'
 import QuestionBox from './components/QuestionBox'
 import SideBar from './components/SideBar'
-import ContextProvider from './context/ContextProvider'
+import useData from './CustomHook/useData'
 
 function App() {
-  
+  const {End,score}=useData()
   return (
-    <ContextProvider>
-      <div className='flex flex-row'>
-     <QuestionBox/>
-     <SideBar/>
+    
+      <div className='flex flex-row relative'>
+    {
+      End? <Result/>
+      :
+      <>
+      <QuestionBox/>
+      <SideBar/></>
+
+    }
      </div>
-    </ContextProvider>
+    
   )
 }
 
