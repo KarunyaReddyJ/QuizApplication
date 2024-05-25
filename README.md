@@ -9,6 +9,8 @@ Currently, two official plugins are available:
 
 
 This project is a quiz application built with React. It fetches quiz questions from an API and allows users to answer them. The application includes a main question display, a sidebar for navigation, and context management for state handling.
+ <h2>Application Picture</h2>
+ <img src="./src/utils/Application.png">
 
 ## Table of Contents
 - [Getting Started](#getting-started)

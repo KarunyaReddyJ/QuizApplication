@@ -19,6 +19,7 @@ function ContextProvider({ children }) {
           })
         );
         setQuestionNo(0)
+        setScore(0)
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);

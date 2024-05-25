@@ -39,6 +39,9 @@ function Palette({ text, isQuestion, question = {}, index = -1 }) {
         else return eval(`${score}${oper}${4}`);
       });
     }
+    else{
+      question['correct']=false;
+    }
   }
   return (
     <div
@@ -48,7 +51,7 @@ function Palette({ text, isQuestion, question = {}, index = -1 }) {
         ? "mx-auto w-4/6 min-w-64 h-20 bg-gray-300 flex flex-col justify-center"
         : question["choice"] === index
         ? "bg-yellow-200 px-4 py-2 flex flex-col justify-center w-4/6 my-10 h-20"
-        : "bg-gray-200 px-4 py-2 flex flex-col justify-center w-4/6 my-10 h-20 hover:bg-gray-400"
+        : "bg-gray-200 px-4 py-2 flex flex-col justify-center w-4/6 my-10 h-20 hover:bg-gray-400 cursor-pointer"
     }
      text-center shadow-xl text-black align-middle rounded-md`}
       onClick={handleClick}
